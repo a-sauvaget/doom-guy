@@ -24,15 +24,14 @@ let app = {
         '../assests/sprite/DGF-' + app.counter + '.png';
     } else {
       const footer = document.getElementById('footer');
-      console.log(footer);
-      const resetButton = document.createElement('button');
-      // '<button id="resetButton">Heal !</button>';
-      resetButton.setAttribute('id', 'resetButton');
-      resetButton.textContent = 'heal !';
-      resetButton.addEventListener('click', app.handleClickOnResetButton);
-      footer.appendChild(resetButton);
-      let spriteElement = document.getElementById('doomguy');
-      spriteElement.removeEventListener('click', app.handleClickOnSprite);
+      if (!document.getElementById('resetButton')) {
+        const resetButton = document.createElement('button');
+        // '<button id="resetButton">Heal !</button>';
+        resetButton.setAttribute('id', 'resetButton');
+        resetButton.textContent = 'heal !';
+        resetButton.addEventListener('click', app.handleClickOnResetButton);
+        footer.appendChild(resetButton);
+      }
     }
   },
   handleClickOnResetButton: function () {
