@@ -15,13 +15,13 @@ let app = {
     rightOver.addEventListener('mouseleave', app.handleMouseleave);
   },
   handleClickOnSprite: function () {
-    let audio = new Audio('../assests/sound/DSPUNCH.wav');
+    let audio = new Audio('./assests/sound/DSPUNCH.wav');
     audio.play();
 
     if (app.counter < 5) {
       app.counter += 1;
       document.getElementById('doomguy').src =
-        '../assests/sprite/DGF-' + app.counter + '.png';
+        './assests/sprite/DGF-' + app.counter + '.png';
       if (app.counter == 5) {
         const footer = document.getElementById('footer');
         if (!document.getElementById('resetButton')) {
@@ -36,12 +36,12 @@ let app = {
     }
   },
   handleClickOnResetButton: function () {
-    let audio = new Audio('../assests/sound/DSBSPSIT.wav');
+    let audio = new Audio('./assests/sound/DSBSPSIT.wav');
     audio.play();
 
     app.counter = 1;
 
-    document.getElementById('doomguy').src = '../assests/sprite/DGF-1.png';
+    document.getElementById('doomguy').src = './assests/sprite/DGF-1.png';
     const footer = document.getElementById('footer');
     const resetButton = document.getElementById('resetButton');
     footer.removeChild(resetButton);
@@ -49,19 +49,19 @@ let app = {
   handleLeftMouseover: function () {
     if (app.counter < 6) {
       document.getElementById('doomguy').src =
-        '../assests/sprite/DGL-' + app.counter + '.png';
+        './assests/sprite/DGL-' + app.counter + '.png';
     }
   },
   handleRightMouseover: function () {
     if (app.counter < 6) {
       document.getElementById('doomguy').src =
-        '../assests/sprite/DGR-' + app.counter + '.png';
+        './assests/sprite/DGR-' + app.counter + '.png';
     }
   },
   handleMouseleave: function () {
     if (app.counter < 6) {
       document.getElementById('doomguy').src =
-        '../assests/sprite/DGF-' + app.counter + '.png';
+        './assests/sprite/DGF-' + app.counter + '.png';
     }
   },
 };
