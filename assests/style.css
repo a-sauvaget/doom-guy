@@ -1,0 +1,59 @@
+body {
+    background: darkgray;
+    font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: bold;
+
+  color: red;
+
+  height: 10vh;
+}
+
+main {
+  height: 80vh;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+
+  height: 10vh;
+}
+
+.aside {
+  height: 100%;
+  width: 100%;
+
+  background: lightgray;
+
+  margin-left: 4vw;
+  margin-right: 4vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aside h2 {
+  text-transform: uppercase;
+
+  font-size: bold;
+
+}
+
+.sprite {
+  height: 200px;
+  width: auto;
+
+  cursor: pointer;
+}
