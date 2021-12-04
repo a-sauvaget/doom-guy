@@ -2,7 +2,7 @@
 
 Simple JS interaction test.
 
-You can hit the Doom Guy, and heal it after.
+You can hit the Doom Guy, and heal him after.
 
 Have fun 🥳
 
